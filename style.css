@@ -1,0 +1,196 @@
+.flex1{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 2rem;
+    justify-content: center;
+    gap: 30px;
+  
+}
+.l1{  
+
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    animation: eswar 10s linear 0s infinite;
+}
+@keyframes eswar {
+    0%{ transform:skew(0deg)}    
+    50%{transform: skew(30deg);}
+    100%{transform: skew(0deg);}
+}
+.l2{  
+
+    width: 100px;
+    height: 100px;
+    background-color:burlywood;
+    animation: eswar1 5s ease-in-out 0s infinite;
+}
+@keyframes eswar1 {
+    0%{ transform:skew(0deg)}    
+    40%{transform:skew(40deg);}
+    70%{transform:skew(0deg);}
+    100%{transform: skew(-40deg);}
+    }
+.l3{
+    width: 100px;
+    height: 100px;
+    background-color:cadetblue;
+    animation: eswar2 5s ease-in-out 0s infinite;
+
+}
+@keyframes eswar2 {
+    0%{ transform:rotate(0deg)}    
+    50%{transform:rotate(180deg);}
+    100%{transform:rotate(360deg);}
+    }
+.l4{
+    width: 100px;
+    height: 100px;
+    background-color:cadetblue;
+    animation: eswar3 2s linear 0s infinite; 
+}
+@keyframes eswar3{
+  0%{ height: 100px;}
+  50%{height: 40px;}
+  100%{ height: 100px;}
+  
+}
+.l5{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+    animation: eswar4 3s ease-in-out 0s infinite;
+}
+@keyframes eswar4{
+    0%{ width: 100px;}
+    50%{width: 40px;}
+    100%{ width: 100px;}
+    
+}
+.l6{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: eswar5 5s ease-in-out 0s infinite;
+}
+@keyframes eswar5{
+    0%{ transform:rotate(0deg)}    
+    50%{transform:rotate(180deg);}
+    100%{transform:rotate(360deg);}
+    }
+
+.flex2{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 2rem;
+    align-items: center;
+}
+.p1,.p2{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+   transition:4s linear;
+}
+.p1:hover{ 
+    width: 300px;
+    
+}
+.p2:hover{
+   width: 300px;
+   height: 200px;
+}
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+#sun {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    display: block;
+    position: relative;
+    left: 70vw;
+}
+#city {
+    width: auto;
+    height: 40vh;
+    position: relative;
+    background-repeat: repeat-x;
+    animation: infinite 10s city linear reverse;
+}
+@keyframes city {
+    from {
+        left: -300px;
+    }
+    to {
+        left: 0;
+    }
+}
+#road {
+    width: auto;
+    height: 37.5vh;
+    position: absolute;
+    top: 420px;
+    animation: infinite 5s road linear reverse;
+}
+@keyframes road {
+    from {
+        left: -2000px;
+    }
+    to {
+        left: 0;
+    }
+}
+#car {
+    width: 380px;
+    position: absolute;
+    left: 35vw;
+    bottom: 160px;
+}
+#flag {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: 755px;
+    bottom: 255px;
+}
+#wheel1 {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 515px;
+    bottom: 170px;
+    animation: infinite 1s wheel linear;
+}
+#wheel2 {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 748px;
+    bottom: 170px;
+    animation: infinite 1s wheel linear;
+}
+@keyframes wheel {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.flex-container {
+    width: calc(100vw - 20px);
+    height: 75vh;
+    position: absolute;
+    left: 0;
+   
+}
